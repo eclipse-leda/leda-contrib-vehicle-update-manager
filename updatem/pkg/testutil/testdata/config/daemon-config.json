@@ -1,0 +1,37 @@
+{
+  "log": {
+    "log_file": "log/update-manager.log",
+    "log_level": "INFO",
+    "log_file_size": 2,
+    "log_file_count": 5,
+    "log_file_max_age": 28,
+    "log_syslog": false
+  },
+  "things": {
+    "home_dir": "/var/lib/updatemanagerd",
+    "features": [
+      "SoftwareUpdatable:manifest"
+    ],
+    "connection": {
+      "broker_url": "tcp://localhost:1883",
+      "keep_alive": 20000,
+      "disconnect_timeout": 250,
+      "client_username": "",
+      "client_password": "",
+      "connect_timeout": 30000,
+      "acknowledge_timeout": 15000,
+      "subscribe_timeout": 15000,
+      "unsubscribe_timeout": 5000
+    }
+  },
+  "orchestration": {
+    "k8s": {
+      "kubeconfig": ""
+    },
+    "self_update": {
+      "enable_reboot": false,
+      "reboot_timeout": "30s",
+      "timeout": "10m"
+    }
+  }
+}
