@@ -1,0 +1,13 @@
+[Unit]
+Description=Vehicle Update Manager
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/updatemanagerd
+Restart=always
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
