@@ -51,6 +51,8 @@ The Eclipse Leda distribution makes use of VUM as a container running through a 
 If you want to contribute bug reports or feature requests, please use *GitHub Issues*.
 For details, please see our [contributing guidelines](CONTRIBUTING.md)
 
+# Data privacy notice
+Please see our [data privacy notice](DATA_PRIVACY_NOTICE.md)
 
 # License and Copyright
 
